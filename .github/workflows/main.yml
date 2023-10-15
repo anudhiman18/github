@@ -10,9 +10,9 @@ jobs:
     name: Terraform Actions
     runs-on: ubuntu-latest
     env:
-      AWS_Access_Key_ID: ASIAXWDRTCCOMLEEE5W4
-      AWS_Secret_Access_Key: KSR7LBL9/hufV+3NmjC2JNshTL2TOj4pqomTQ7W4
-      AWS_Session_Token: IQoJb3JpZ2luX2VjED0aCXVzLXdlc3QtMiJGMEQCIGcDew7OYQnY2UrMp7kPOEIaTTT8s4m6ZXwUASUmbQl1AiBo9iJlRpPw00OQIYY5yk/J0+1iBEfMShhWxdkghQMCTir7AghWEAEaDDUyODUxOTIwNTAyMCIMDylXPxsQhkNdZmxyKtgCqqCwrPU2hE3AnaOT0UCqQcqDBEliDS6XeMccYzYRSkZTDnCawLC4P9Np0TaPZXFHOgGTX4HQQhfvxUVpxDVaDio8M3/saZBfllev7TVJNaV4vT3WSGlijDntEuf624KwcpHsdPb8UGW/g6Kd7dkzs2YDPgp7aKpUjEuCwCq7t4QRbf1IKuGvaoSUZ7+0AxCDFOaufo0ux1H6m1Uu5nvyNi+ERpJFeeEbFD5bdDJSxkRYrwFQm8OfdndgchSxzpL1CTbN0sWmliXlev4BmK5II0BM2/n4gMEyyPc8P/zHQbASOnknI5Gr+UDKEGOtGJNSBlrU+553Y91sLQ97dhN0O+3veaqWF+0HiEz9BBSmYJIBVq2QtTzy8A9TS0zgngFybjwc9tZC/NaKRe3JT4vPtb1lC+tHLIIKJymbwUY8c+NLwCA971KPkCk7Jd1uwXGf6qRziTJYdgAwnuGtqQY6qAGl/vODE1VWbncnCU7265pJh2r7/Eb3nix0eZpMDfnBcVKq0U1Zfsw+JpVMg9UXrtbk/HuCTlihCGLwvE4xTlPvvJAEthEcoz5+1ytl2TBsnii+UoQil6YzqqgTV3FHzF6pqAueVr9Tkh8xCtMjTxflQfJTXSSRVOP+TjKw+o/MRAmOdOz/acSyxpcYOvvgvnvQp5jXDv3euBk7Trk9dpTcusbCUeROarg=
+      AWS_Access_Key_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_Secret_Access_Key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_Session_Token:  ${{ secrets.AWS_SESSION_TOKEN }}
     defaults:
       run:
         working-directory: Module
